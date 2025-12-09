@@ -10,21 +10,22 @@ body {
     background-color: #f9f9f9;
     color: #333;
 }
-
-/* Hero (imagem de capa) */
 .hero {
-    height: 200px;
+  width: 100%;
+  height: 400px; /* ajuste conforme quiser */
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000; /* ou tema do site */
+  background-color: #000;
+  }
+
+.hero-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.hero img{
-      max-height: 100%;
-  max-width: 100%;
-  object-fit: contain;
-}
 
 .hero-content h1 {
     font-size: 48px;
@@ -82,6 +83,10 @@ section {
     justify-content: center;
     margin-top: 20px;
 }
+#servicos h2 {
+  text-align: center;
+}
+
 
 .servico {
     width: 300px;
@@ -100,6 +105,76 @@ section {
 .servico h3 {
     padding: 10px 0;
 }
+/* end serviços*/
+
+#agendamento {
+  background-color: #f2f2f2;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#agendamento h2 {
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+  color: #222;
+}
+
+#form-agendamento {
+  max-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#form-agendamento label {
+  text-align: left;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+#form-agendamento input,
+#form-agendamento select {
+  padding: 8px;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#form-agendamento button {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#form-agendamento button:hover {
+  background-color: #1ebd5c;
+}
+
+#confirmacao {
+  font-size: 0.9rem;
+}
+
+/* 📱 Responsivo para telas pequenas */
+@media (max-width: 500px) {
+  #form-agendamento {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  #agendamento h2 {
+    font-size: 1.3rem;
+  }
+}
+
+
+          /*end agendamento */
 
 /* Footer */
 footer {
